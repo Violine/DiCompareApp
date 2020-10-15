@@ -11,19 +11,9 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-	@Inject
-	lateinit var retrofit: Retrofit
-
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
 		setSupportActionBar(findViewById(R.id.toolbar))
-
-		applicationContext.getApp.getAppComponent().inject(this)
-
-		retrofit.crackAllBanks()
 	}
 }
-
-val Context.getApp: App
-	get() = applicationContext as App
